@@ -1,7 +1,6 @@
-from pydantic import BaseModel
+from pydantic import BaseModel, Field, ConfigDict
 
 class ProductBase(BaseModel):
-    id: int
     name: str
     price: float
     category: str
@@ -13,3 +12,11 @@ class ProductBase(BaseModel):
     stock_count: int
     brand: str
     discount_price: float
+
+class ProductCreate(ProductBase):
+    pass
+
+class ProductResponse(ProductBase):
+    model_config = ConfigDict(from_attributes=True)
+
+    id : int
