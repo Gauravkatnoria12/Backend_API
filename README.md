@@ -72,10 +72,6 @@ Backend_API/
 └── ...                 # Other project files
 ```
 
-## API Endpoints
-
-Add your API endpoints documentation here.
-
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
